@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-TOPIA - Duncan | Utopia Show</title>
+    <link rel="icon" type="image/x-icon" href="https://schtirlitz.ru/800/600/http/i.pinimg.com/originals/72/15/4a/72154ac9683014ca3c812330d29275fc.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: url('https://music-bandlink.s3.yandex.net/img/bandlinks/GbZTd_ovNU3UGH_370x370.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+
+        body::before {
+            content: '';
+            width: calc(100vw + 80px);
+            height: calc(100vh + 80px);
+            position: absolute;
+            left: -40px;
+            top: -40px;
+            background: inherit;
+            filter: blur(20px);
+            z-index: -1;
+        }
+
+
+        .container {
+            background: rgba(17, 17, 17, 0.8);
+            width: 380px;
+            border-radius: 16px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .tabs {
+            display: flex;
+            padding: 20px 20px 0;
+            gap: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+
+        .tab {
+            padding: 10px 0;
+            cursor: pointer;
+            position: relative;
+        }
+
+
+        .tab.active {
+            color: #fff;
+        }
+
+
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #e74c3c;
+        }
+
+
+        .tab:not(.active) {
+            color: #888;
+        }
+
+
+        .cover-section {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+
+        .cover-image {
+            width: 340px;
+            height: 330px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 20px;
+        }
+
+
+        .artist {
+            color: #888;
+            margin: 0 20px 20px;
+            font-size: 16px;
+        }
+
+
+        .platform {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+
+        .platform-name {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+        .platform-icon {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+
+        .btn {
+            background: #e74c3c;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+
+        .btn:hover {
+            background: #c0392b;
+            transform: scale(1.05);
+        }
+
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+
+        .social-icon:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+
+        .footer {
+            padding: 20px;
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active">Release</div>
+        </div>
+
+
+        <div class="cover-section">
+            <img src="https://music-bandlink.s3.yandex.net/img/bandlinks/GbZTd_ovNU3UGH_370x370.jpeg" alt="U-TOPIA Cover" class="cover-image">
+        </div>
+
+
+        <div class="title">U-TOPIA</div>
+        <div class="artist"><h4>Duncan</h4></div>
+
+
+        <div class="platform">
+            <span class="platform-name">
+                <img src="https://music.yandex.ru/favicon.ico" alt="Yandex Music" class="platform-icon">
+                Yandex Music
+            </span>
+            <a href="https://music.yandex.ru/album/34401410?utm_source=bandlink&utm_medium=U-TOPIA&utm_campaign=Duncan" target="_blank">
+                <button class="btn">Play</button>
+            </a>
+        </div>
+
+
+        <div class="platform">
+            <span class="platform-name">
+                <img src="https://external-content.duckduckgo.com/ip3/music.vk.com.ico" alt="VK Music" class="platform-icon">
+                VK Music
+            </span>
+            <a href="https://boom.ru/redirect/album/28268336?mt_sub1=Duncan&mt_click_id=mt-iybts5-1734296425-2428080261&mt_sub3=28268336&mt_sub2=%27album%27" target="_blank">
+                <button class="btn">Play</button>
+            </a>
+        </div>
+
+
+        <div class="platform">
+            <span class="platform-name">
+                <img src="https://open.spotify.com/favicon.ico" alt="Spotify" class="platform-icon">
+                Spotify
+            </span>
+            <a href="https://open.spotify.com/album/3cYjcMdSE3Tt3Gn7chzay4" target="_blank">
+                <button class="btn">Play</button>
+            </a>
+        </div>
+
+
+        <div class="platform">
+            <span class="platform-name">
+                <img src="https://www.apple.com/favicon.ico" alt="Apple Music" class="platform-icon">
+                Apple Music
+            </span>
+            <a href="https://music.apple.com/ru/album/duncan-single/1784242819?at=1000lqjf&ct=bq" target="_blank">
+                <button class="btn">Play</button>
+            </a>
+        </div>
+
+
+        <div class="footer">
+            <p>𝙈𝙖𝙙𝙚 𝙗𝙮 𝙂𝙞𝙩𝙃𝙪𝙗.𝙘𝙤𝙢/403𝙤𝙗𝙨𝙚𝙧𝙫𝙖𝙣𝙩</p>
+        </div>
+    </div>
+</body>
+</html>
