@@ -15,4 +15,5 @@ This is a web page designed to promote the music release "U-TOPIA" by the artist
 - **Hover Effects**: Buttons and social icons have smooth transition effects for better interactivity.
 
 ## Screenshot
-![Screenshot_20241215_221039](https://github.com/user-attachments/assets/35cf083c-db20-4af1-889a-82ce1c4be491)
+
+![Screenshot_20241215_221207](https://github.com/user-attachments/assets/db4c0360-b004-4f36-a3be-b280e603a9f5)
